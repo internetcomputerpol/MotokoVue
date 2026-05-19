@@ -1,0 +1,17 @@
+canisters:
+  - name: MotokoVue_backend
+    recipe:
+      type: "@dfinity/motoko@v4.1.0"
+      configuration:
+        main: src/MotokoVue_backend/main.mo
+        candid: src/MotokoVue_backend/MotokoVue_backend.did
+
+  - name: MotokoVue_frontend
+    recipe:
+      type: "@dfinity/asset-canister@v2.1.0"
+      configuration:
+        dir: src/MotokoVue_frontend/dist
+        build:
+          - npm install
+          - npx @icp-sdk/bindgen --did-file src/MotokoVue_backend/MotokoVue_backend.did --out-dir src/MotokoVue_frontend/src/declarations --force
+          - npm run build
