@@ -33,3 +33,10 @@ icp build
 
 Deploy canisters
 icp deploy
+
+UPDATE MOTOKO Code Tip
+When U update Motoko code and see no changes on Candid UI
+
+U need 2 Generate the Candid (.did) API description for the Motoko backend canister ( Run it from main directory where icp.yaml is located ) 
+(mops toolchain bin moc) --idl $(mops sources) -o src/MotokoVue_backend/MotokoVue_backend.did src/MotokoVue_backend/main.mo
+
