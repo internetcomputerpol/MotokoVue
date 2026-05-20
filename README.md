@@ -2,6 +2,9 @@
 
 Simple starter template for building apps on the Internet Computer using Vue + Motoko.
 
+## To install icp-cli 
+npm install -g @icp-sdk/icp-cli @icp-sdk/ic-wasm
+
 ## Stack
 
 - Frontend: Vue
