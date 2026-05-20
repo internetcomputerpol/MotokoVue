@@ -41,3 +41,6 @@ U need 2 Generate the Candid (.did) API description for the Motoko backend canis
 
 (mops toolchain bin moc) --idl $(mops sources) -o src/MotokoVue_backend/MotokoVue_backend.did src/MotokoVue_backend/main.mo
 
+and after that run
+icp deploy 
+
