@@ -34,6 +34,9 @@ icp build
 Deploy canisters
 icp deploy
 
+Update moc !!!
+mops toolchain use moc latest
+
 UPDATE MOTOKO Code Tip
 When U update Motoko code and see no changes on Candid UI
 
