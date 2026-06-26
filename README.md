@@ -44,6 +44,11 @@ U need 2 Generate the Candid (.did) API description for the Motoko backend canis
 
 (mops toolchain bin moc) --idl $(mops sources) -o src/MotokoVue_backend/MotokoVue_backend.did src/MotokoVue_backend/main.mo
 
+LOOK AT THE PATHS: In Dfinity Template .did file is located outside backend catalog so path could be like
+$(mops toolchain bin moc) --idl $(mops sources) -o backend/backend.did backend/src/main.mo
+It could be the case in rebuild did ile to create Candid UI Interfase base on this file while deploy
+
+
 and after that run
 icp deploy 
 
